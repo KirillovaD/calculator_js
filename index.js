@@ -1,15 +1,23 @@
+function count(){
+  let countA = prompt('Введите первое чило', '');
+  let countSign = prompt('+ , - , * , / ?', '');
+  let countB = prompt('Введите второе число?', '');
+  let count;
+  if (countSign === '+') {
+    count = +countA + +countB;
+  }
+  else if(countSign === '-') {
+    count = +countA - +countB;
+  }
+  else if(countSign === '/') {
+    count = +countA / +countB;
+  }
+  else if(countSign === '*') {
+    count = +countA * +countB;
+  }
+  else {
+    alert('Я перегрелся. Попробуйте снова')
+  }
+  alert(count)
+}
 
-
-function countAdd() {
-  alert(Number(document.getElementById("a").innerHTML) + document.getElementById("b").innerHTML);
-}
-function countSubstr() {
-  alert(Number(document.getElementById("a").innerHTML) - document.getElementById("b").innerHTML);
-}
-
-function counMulti() {
-  alert(Number(document.getElementById("a").innerHTML) * document.getElementById("b").innerHTML);
-}
-function counDiv() {
-  alert(Number(document.getElementById("a").innerHTML) / document.getElementById("b").innerHTML);
-}
