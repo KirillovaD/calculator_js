@@ -1,0 +1,15 @@
+.squares {
+  max-width: 1440px;
+  margin: 50px auto;
+  display: flex;
+  gap: 50px;
+}
+.square{
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+.selected{
+  background-color: coral
+
+}
