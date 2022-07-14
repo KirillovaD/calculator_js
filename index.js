@@ -25,7 +25,10 @@ function substract() {
 
 function divide() {
   let result = Number(numA.value) / Number(numB.value)
-  total.textContent = `= ${result}`;
+  if (Number(numB.value) == 0){
+    alert ("На ноль делить нельзя!")
+   }
+  else total.textContent = `= ${result}`;
   numA.value = '';
   numB.value = '';
 }

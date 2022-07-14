@@ -1,11 +1,14 @@
 .wrapper {
   max-width: 1440px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
   margin: 50px auto;
 }
 input {
-  width: 100px;
+  width: 130px;
   height: 50px;
   border: 5px solid darkmagenta;
   border-radius: 20px;
@@ -20,15 +23,14 @@ input {
 }
 
 .buttons {
-  width: 120px;
+  grid-column: 1/3;
+  
   display: flex;
-  flex-wrap: wrap;
   margin: 0 10px;
 }
 .btn {
-  width: 50px;
+  width: 70px;
   height: 50px;
-  text-align: center;
   margin: 0 5px;
   
   
@@ -37,7 +39,6 @@ input {
   border-radius: 50px;
  
   background-color: darkmagenta;
-  letter-spacing: 5px;
   text-transform: uppercase;
   
   
